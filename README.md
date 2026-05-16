@@ -108,7 +108,7 @@ The following requirements were completed successfully:
 
 Add the screenshot of the portfolio website below after running the project.
 
-![Portfolio Screenshot](images/screenshot.png)
+![Portfolio Screenshot](images/portfolio_page.jpg)
 
 ---
 
