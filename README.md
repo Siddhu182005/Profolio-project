@@ -2,118 +2,165 @@
 
 ## Project Overview
 
-This project is a personal portfolio website created using HTML5 and basic frontend concepts.  
-The purpose of this website is to present personal information, technical skills, academic background, and project details in a simple and organized way.
+This project is a responsive personal portfolio website created using HTML5 and CSS3.  
+The main purpose of this project is to showcase personal information, technical skills, academic background, and projects in a clean and simple format.
 
-The portfolio is designed as a single-page website with different sections such as About, Skills, Projects, and Contact. It helps in showcasing personal work and learning experience in web development.
+The website is designed as a single-page portfolio with different sections such as Home, About, Skills, Projects, and Contact.
+
+This project helped in understanding the basics of frontend web development and webpage structure.
 
 ---
 
-## Objectives
+# Objectives
 
-- To create a personal portfolio website using HTML
-- To understand the structure of an HTML5 webpage
+- To create a personal portfolio website using HTML and CSS
+- To understand the structure of a webpage
 - To learn semantic HTML tags
-- To create multiple webpage sections
-- To improve frontend development basics
-- To design a clean and user-friendly interface
+- To create a responsive webpage design
+- To improve frontend development skills
+- To organize content in different sections
 
 ---
 
-## HTML Concepts Used
+# Technologies Used
+
+- HTML5
+- CSS3
+- Font Awesome
+- GitHub
+
+---
+
+# HTML Concepts Used
 
 The following HTML concepts were used in this project:
 
-- Basic HTML5 document structure
+- Basic HTML5 structure
 - Semantic HTML tags:
   - header
   - nav
-  - main
   - section
   - footer
-- Hyperlinks using anchor tags
+- Hyperlinks using anchor tag
 - Images using img tag
 - Lists using ul and li tags
 - Forms using:
   - input
   - textarea
   - button
-- Internal page navigation using IDs
-- Responsive layout using Tailwind CSS classes
+- Internal navigation using section IDs
 
 ---
 
-## CSS and Design Features
+# CSS Concepts Used
 
-The following design features were added:
+The following CSS concepts were used:
 
-- Responsive layout using Tailwind CSS
-- Gradient text effects
-- Hover effects on buttons and links
-- Card-based design for skills and projects
-- Sticky navigation bar
-- Dark theme user interface
-- Rounded containers and modern styling
+- External CSS file
+- Flexbox
+- CSS Grid
+- Hover effects
+- Responsive design using media queries
+- Background colors and gradients
+- Border radius
+- Box shadow
+- Text styling
+- Transitions and animations
 
 ---
 
-## Portfolio Structure
+# Website Sections
 
-The website contains the following sections:
+## Header Section
 
-### Header
-Contains the portfolio title and navigation menu.
+Contains:
+- Website logo/title
+- Navigation menu
 
-### Home Section
-Displays profile image, introduction, and short description.
+The navigation links help users move between sections of the webpage.
 
-### About Section
-Contains educational details and personal introduction.
+---
 
-### Skills Section
-Shows technical skills such as HTML, CSS, JavaScript, Python, C++, and GitHub.
+## Home Section
 
-### Projects Section
-Displays project information with short descriptions.
+Contains:
+- Profile image
+- Name
+- Introduction
+- Short description
 
-Projects included:
-- Career2Course Website
-- Jal Raksha App
+This section gives a basic introduction about the portfolio owner.
 
-### Contact Section
+---
+
+## About Section
+
+Contains:
+- Personal information
+- Educational background
+- Career interests
+
+This section describes learning interests and development goals.
+
+---
+
+## Skills Section
+
+Displays technical skills such as:
+- HTML
+- CSS
+- JavaScript
+- Python
+- C++
+- GitHub
+
+Icons are added using Font Awesome library.
+
+---
+
+## Projects Section
+
+This section contains project details.
+
+### Project 1: Career2Course Website
+
+A simple career guidance website created for students to explore courses and career paths.
+
+### Project 2: Jal Raksha App
+
+An Android-based awareness project focused on water conservation and water-saving methods.
+
+---
+
+## Contact Section
+
 Contains a contact form with:
 - Name field
 - Email field
 - Message box
 - Submit button
 
-### Footer
-Contains social media icons and copyright information.
+This section is used for user interaction.
 
 ---
 
-## Setup and Installation Instructions
+## Footer Section
 
-1. Download or clone the repository from GitHub.
-
-2. Open the project folder.
-
-3. Make sure the following files are available:
-   - index.html
-   - profile.jpg
-   - images folder (optional)
-
-4. Open the index.html file in any web browser.
+Contains:
+- Social media icons
+- Copyright information
 
 ---
 
-## File Structure
+# Project Structure
 
 ```plaintext
 Portfolio-Website/
 │
 ├── index.html
+├── style.css
 ├── profile.jpg
 ├── README.md
+│
 └── images/
     └── portfolio_page.jpg
