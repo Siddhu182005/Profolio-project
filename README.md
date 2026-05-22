@@ -2,69 +2,93 @@
 
 ## Project Overview
 
-This project is a personal portfolio website developed using HTML5. The main purpose of this website is to present personal details, skills, projects, and contact information in a clean and organized format.
+This project is a personal portfolio website created using HTML5 and basic frontend concepts.  
+The purpose of this website is to present personal information, technical skills, academic background, and project details in a simple and organized way.
 
-The portfolio helps in showcasing academic background, technical skills, and project work through different sections on a single webpage.
+The portfolio is designed as a single-page website with different sections such as About, Skills, Projects, and Contact. It helps in showcasing personal work and learning experience in web development.
 
 ---
 
 ## Objectives
 
 - To create a personal portfolio website using HTML
-- To understand the structure of an HTML webpage
-- To learn and use semantic HTML tags
-- To divide the webpage into different sections
-- To create a simple and easy-to-use website
+- To understand the structure of an HTML5 webpage
+- To learn semantic HTML tags
+- To create multiple webpage sections
+- To improve frontend development basics
+- To design a clean and user-friendly interface
 
 ---
 
 ## HTML Concepts Used
 
-The following HTML concepts were used while creating this project:
+The following HTML concepts were used in this project:
 
-- Basic HTML5 structure
-- Semantic HTML tags such as:
+- Basic HTML5 document structure
+- Semantic HTML tags:
   - header
   - nav
   - main
   - section
-  - article
   - footer
-- Lists using ul and li tags
 - Hyperlinks using anchor tags
-- Adding images using img tag
-- Creating forms using:
+- Images using img tag
+- Lists using ul and li tags
+- Forms using:
   - input
   - textarea
   - button
-- Internal navigation using section IDs
+- Internal page navigation using IDs
+- Responsive layout using Tailwind CSS classes
+
+---
+
+## CSS and Design Features
+
+The following design features were added:
+
+- Responsive layout using Tailwind CSS
+- Gradient text effects
+- Hover effects on buttons and links
+- Card-based design for skills and projects
+- Sticky navigation bar
+- Dark theme user interface
+- Rounded containers and modern styling
 
 ---
 
 ## Portfolio Structure
 
-The portfolio website contains the following sections:
+The website contains the following sections:
 
 ### Header
-Contains the website title and navigation menu.
+Contains the portfolio title and navigation menu.
 
 ### Home Section
-Displays introduction, profile photo, and short description.
+Displays profile image, introduction, and short description.
 
 ### About Section
-Contains personal and educational information.
+Contains educational details and personal introduction.
 
 ### Skills Section
-Displays technical skills and technologies known.
+Shows technical skills such as HTML, CSS, JavaScript, Python, C++, and GitHub.
 
 ### Projects Section
-Shows details about the projects created.
+Displays project information with short descriptions.
+
+Projects included:
+- Career2Course Website
+- Jal Raksha App
 
 ### Contact Section
-Contains a simple contact form for user interaction.
+Contains a contact form with:
+- Name field
+- Email field
+- Message box
+- Submit button
 
 ### Footer
-Displays copyright information.
+Contains social media icons and copyright information.
 
 ---
 
@@ -74,45 +98,22 @@ Displays copyright information.
 
 2. Open the project folder.
 
-3. Open the index.html file in any web browser.
+3. Make sure the following files are available:
+   - index.html
+   - profile.jpg
+   - images folder (optional)
+
+4. Open the index.html file in any web browser.
 
 ---
 
-## Code Structure Explanation
+## File Structure
 
-### index.html
-Contains the complete structure and content of the portfolio website.
-
-### images Folder
-Stores profile image and screenshot used in the project.
-
-### README.md
-Contains complete project documentation.
-
----
-
-## Technical Requirements Completed
-
-The following requirements were completed successfully:
-
-- Created index.html using proper HTML5 structure
-- Added About, Skills, Projects, and Contact sections
-- Used semantic HTML tags
-- Added navigation links between sections
-- Added image and contact form
-- Organized project files properly in GitHub repository
-
----
-
-## Screenshot of Working Application
-
-Add the screenshot of the portfolio website below after running the project.
-
-![Portfolio Screenshot](images/portfolio_page.jpg)
-
----
-
-## Technologies Used
-
-- HTML5
-- GitHub
+```plaintext
+Portfolio-Website/
+│
+├── index.html
+├── profile.jpg
+├── README.md
+└── images/
+    └── portfolio_page.jpg
