@@ -1,127 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siddharth Ambat - Portfolio</title>
+
+    <title>Siddharth Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
-<body>
+<body class="bg-gray-900 text-white">
 
-<header>
-    <nav>
-        <h1>Siddharth Ambat</h1>
+    <!-- navbar -->
+    <header class="sticky top-0 bg-gray-900 shadow-md z-50">
 
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+        <nav class="container mx-auto flex justify-between items-center p-5">
 
-<main>
+            <h1 class="text-2xl font-bold text-purple-400">
+                Siddharth
+            </h1>
 
-<section id="home">
-    <img src="images/myphoto.jpg" alt="Siddharth Ambat" width="200">
+            <div class="hidden md:flex gap-6">
 
-    <h2>Hi, I'm Siddharth Ambat</h2>
+                <a href="#about" class="hover:text-purple-400 transition">
+                    About
+                </a>
 
-    <p>
-        BSc IT Student | Web Developer | Python Learner
-    </p>
+                <a href="#skills" class="hover:text-purple-400 transition">
+                    Skills
+                </a>
 
-    <p>
-        I am passionate about web development, Python programming, and creating modern websites.
-    </p>
-</section>
+                <a href="#projects" class="hover:text-purple-400 transition">
+                    Projects
+                </a>
 
-<section id="about">
+                <a href="#contact" class="hover:text-purple-400 transition">
+                    Contact
+                </a>
 
-    <h2>About Me</h2>
+            </div>
 
-    <p>
-        I am a BSc IT student interested in software development and web technologies.
-        I have created projects like Personal Finance Tracker, Career2Course Website,
-        and Jal Raksha App.
-    </p>
+        </nav>
 
-</section>
+    </header>
 
-<section id="skills">
+    <!-- hero section -->
+    <section class="text-center py-20 px-5">
 
-    <h2>Skills</h2>
+        <div class="w-36 h-36 mx-auto rounded-full overflow-hidden border-4 border-purple-500 mb-6">
 
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>C++</li>
-        <li>GitHub</li>
-    </ul>
+            <!-- put your image in same folder -->
+            <img src="profile.jpg"
+                alt="profile image"
+                class="w-full h-full object-cover">
 
-</section>
+        </div>
 
-<section id="projects">
+        <h2 class="text-5xl font-bold mb-4">
 
-    <h2>Projects</h2>
+            Hi, I'm
+            <span class="gradient-text">
+                Siddharth Ambat
+            </span>
 
-    <article>
-        <h3>Career2Course Website</h3>
+        </h2>
 
-        <p>
-            A career guidance website providing course and career information
-            for students, parents, and teachers.
+        <p class="text-gray-300 text-xl mb-5">
+            BSc IT Student | Learning Web Development & Python
         </p>
-    </article>
 
-    <article>
-        <h3>Jal Raksha App</h3>
+        <p class="max-w-3xl mx-auto text-gray-400 leading-8">
 
-        <p>
-            An Android application focused on water conservation awareness
-            and water-saving techniques.
+            I enjoy creating websites and learning new technologies.
+            Currently I am improving my skills in frontend development,
+            Python programming and basic backend concepts.
+
         </p>
-    </article>
 
-</section>
+    </section>
 
-<section id="contact">
+    <!-- about -->
+    <section id="about" class="py-16 px-5">
 
-    <h2>Contact</h2>
+        <h3 class="text-4xl font-bold text-center mb-10 gradient-text">
+            About Me
+        </h3>
 
-    <form>
+        <div class="max-w-4xl mx-auto bg-gray-800 rounded-xl p-8">
 
-        <label>Name:</label>
-        <input type="text" name="name">
+            <p class="text-gray-300 text-lg leading-8">
 
-        <br><br>
+                I am a BSc IT student interested in software and web development.
+                I like building small projects and improving my coding skills regularly.
 
-        <label>Email:</label>
-        <input type="email" name="email">
+                I have worked on projects like Career2Course website and Jal Raksha app.
+                Through these projects I learned basics of HTML, CSS, JavaScript and Python.
 
-        <br><br>
+            </p>
 
-        <label>Message:</label>
-        <textarea name="message"></textarea>
+        </div>
 
-        <br><br>
+    </section>
 
-        <button type="submit">Send Message</button>
+    <!-- skills section -->
+    <section id="skills" class="py-16 px-5">
 
-    </form>
+        <h3 class="text-4xl font-bold text-center mb-10 gradient-text">
+            Skills
+        </h3>
 
-</section>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
 
-</main>
+            <div class="bg-gray-800 rounded-xl p-6 text-center">
+                <i class="fab fa-html5 text-5xl text-orange-500 mb-3"></i>
 
-<footer>
+                <h4 class="text-xl font-semibold">
+                    HTML
+                </h4>
+            </div>
 
-    <p>© 2026 Siddharth Ambat</p>
+            <div class="bg-gray-800 rounded-xl p-6 text-center">
+                <i class="fab fa-css3-alt text-5xl text-blue-500 mb-3"></i>
 
-</footer>
+                <h4 class="text-xl font-semibold">
+                    CSS
+                </h4>
+            </div>
+
+            <div class="bg-gray-800 rounded-xl p-6 text-center">
+                <i class="fab fa-js text-5xl text-yellow-400 mb-3"></i>
+
+                <h4 class="text-xl font-semibold">
+                    JavaScript
+                </h4>
+            </div>
+
+            <div class="bg-gray-800 rounded-xl p-6 text-center">
+                <i class="fab fa-python text-5xl text-yellow-500 mb-3"></i>
+
+                <h4 class="text-xl font-semibold">
+                    Python
+                </h4>
+            </div>
+
+            <div class="bg-gray-800 rounded-xl p-6 text-center">
+                <i class="fas fa-code text-5xl text-green-400 mb-3"></i>
+
+                <h4 class="text-xl font-semibold">
+                    C++
+                </h4>
+            </div>
+
+            <div class="bg-gray-800 rounded-xl p-6 text-center">
+                <i class="fab fa-github text-5xl mb-3"></i>
+
+                <h4 class="text-xl font-semibold">
+                    GitHub
+                </h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- projects -->
+    <section id="projects" class="py-16 px-5">
+
+        <h3 class="text-4xl font-bold text-center mb-10 gradient-text">
+            Projects
+        </h3>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+            <div class="bg-gray-800 p-6 rounded-xl">
+
+                <h4 class="text-2xl font-bold text-purple-400 mb-4">
+                    Career2Course Website
+                </h4>
+
+                <p class="text-gray-300 leading-7">
+
+                    A simple career guidance website made for students.
+                    It provides information about different courses and career paths.
+
+                </p>
+
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-xl">
+
+                <h4 class="text-2xl font-bold text-purple-400 mb-4">
+                    Jal Raksha App
+                </h4>
+
+                <p class="text-gray-300 leading-7">
+
+                    An Android project based on water conservation awareness.
+                    The app shares tips and information about saving water.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="py-16 px-5">
+
+        <h3 class="text-4xl font-bold text-center mb-10 gradient-text">
+            Contact
+        </h3>
+
+        <div class="max-w-2xl mx-auto bg-gray-800 p-8 rounded-xl">
+
+            <form class="space-y-5">
+
+                <input type="text"
+                    placeholder="Enter your name"
+                    class="w-full p-4 rounded-lg bg-gray-900 border border-gray-700 outline-none">
+
+                <input type="email"
+                    placeholder="Enter your email"
+                    class="w-full p-4 rounded-lg bg-gray-900 border border-gray-700 outline-none">
+
+                <textarea rows="5"
+                    placeholder="Write your message"
+                    class="w-full p-4 rounded-lg bg-gray-900 border border-gray-700 outline-none"></textarea>
+
+                <button type="submit"
+                    class="w-full bg-purple-500 hover:bg-purple-600 transition p-4 rounded-lg font-semibold">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="text-center py-8 mt-10 border-t border-gray-800">
+
+        <div class="space-x-5 mb-4">
+
+            <a href="https://github.com/" target="_blank">
+                <i class="fab fa-github text-2xl hover:text-purple-400"></i>
+            </a>
+
+            <a href="https://linkedin.com/" target="_blank">
+                <i class="fab fa-linkedin text-2xl hover:text-purple-400"></i>
+            </a>
+
+            <a href="mailto:siddharth@gmail.com">
+                <i class="fas fa-envelope text-2xl hover:text-purple-400"></i>
+            </a>
+
+        </div>
+
+        <p class="text-gray-500">
+            © 2026 Siddharth Ambat
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
