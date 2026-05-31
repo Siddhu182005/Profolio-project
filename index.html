@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,9 +67,7 @@
             <span>Siddharth Ambat</span>
         </h2>
 
-        <p class="subtitle">
-            BSc IT Student | Learning Web Development & Python
-        </p>
+        <p class="subtitle" id="typingText"></p>
 
         <p class="description">
 
@@ -76,6 +75,10 @@
             Currently I am improving my frontend development and Python skills.
 
         </p>
+
+        <a href="resume.pdf" download class="resume-btn">
+            Download Resume
+        </a>
 
     </section>
 
@@ -88,10 +91,14 @@
 
             <p>
 
-                I am a BSc IT student interested in software and web development.
-                I like building small projects and improving my coding skills regularly.
+                I am a BSc IT student interested in software development,
+                web technologies, and programming.
 
-                I have worked on projects like Career2Course website and Jal Raksha app.
+                I enjoy building practical projects and continuously
+                improving my coding skills.
+
+                Some of my projects include the Career2Course Website
+                and Jal Raksha Water Conservation App.
 
             </p>
 
@@ -108,12 +115,12 @@
 
             <div class="skill-box">
                 <i class="fab fa-html5"></i>
-                <h4>HTML</h4>
+                <h4>HTML5</h4>
             </div>
 
             <div class="skill-box">
                 <i class="fab fa-css3-alt"></i>
-                <h4>CSS</h4>
+                <h4>CSS3</h4>
             </div>
 
             <div class="skill-box">
@@ -153,8 +160,8 @@
 
                 <p>
 
-                    A simple career guidance website made for students.
-                    It provides course and career information.
+                    A career guidance website designed to help students
+                    explore educational courses and career opportunities.
 
                 </p>
 
@@ -166,8 +173,9 @@
 
                 <p>
 
-                    An Android project based on water conservation awareness
-                    and water-saving techniques.
+                    An Android application focused on promoting
+                    water conservation awareness and sustainable
+                    water-saving techniques.
 
                 </p>
 
@@ -184,13 +192,25 @@
 
         <div class="card">
 
-            <form>
+            <form id="contactForm">
 
-                <input type="text" placeholder="Enter your name">
+                <input
+                    id="name"
+                    type="text"
+                    placeholder="Enter your name"
+                    required>
 
-                <input type="email" placeholder="Enter your email">
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email"
+                    required>
 
-                <textarea rows="5" placeholder="Write your message"></textarea>
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Write your message"
+                    required></textarea>
 
                 <button type="submit">
                     Send Message
@@ -207,26 +227,30 @@
 
         <div class="social-icons">
 
-            <a href="#">
+            <a href="https://github.com/" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
 
-            <a href="#">
+            <a href="https://linkedin.com/" target="_blank">
                 <i class="fab fa-linkedin"></i>
             </a>
 
-            <a href="#">
+            <a href="mailto:yourmail@gmail.com">
                 <i class="fas fa-envelope"></i>
             </a>
 
         </div>
 
         <p>
-            © 2026 Siddharth Ambat
+            © 2026 Siddharth Ambat. All Rights Reserved.
         </p>
 
     </footer>
 
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
 </body>
 
 </html>
+```
